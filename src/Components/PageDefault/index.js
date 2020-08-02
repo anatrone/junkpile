@@ -1,7 +1,8 @@
-import React from "react";
-import Menu from "../../Components/Menu";
-import Footer from "../../Components/Footer";
-import { Main } from "./styles";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import Menu from '../Menu';
+import Footer from '../Footer';
+import { Main } from './styles';
 
 function PageDefault({ children }) {
   return (
