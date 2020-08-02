@@ -71,7 +71,7 @@ const CadastroCategoria = () => {
           infosDoEvento.preventDefault();
           setCategorias([
             ...categorias,
-            values
+            values,
           ]);
 
           setValues(valoresIniciais);
