@@ -33,7 +33,8 @@ const CadastroCategoria = () => {
   };
 
   useEffect(() => {
-    const URL_MASTER = 'http://localhost:8080/categorias/';
+    const isLocalHost = window.location.hostname.includes('localhost');
+    const URL_MASTER = isLocalHost ? 'http://localhost:8080/categorias' : 'https://junkpile.herokuapp.com/categorias';
     fetch(URL_MASTER)
       .then(async (responseServer) => {
         const resposta = await responseServer.json();
