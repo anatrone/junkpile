@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Img/logo.png';
 import './Menu.css';
-import Button from '../Button';
+import { Button } from '../Button';
 
 function Menu() {
   return (
@@ -11,8 +11,8 @@ function Menu() {
         <img className="Logo" src={Logo} alt="Junkpile" />
       </Link>
 
-      <Button as={Link} className="ButtonLink" to="/cadastro/imagem">
-        Novo desenho
+      <Button as={Link} className="ButtonLink" to="/cadastro/video">
+        Novo Vídeo
       </Button>
     </nav>
   );

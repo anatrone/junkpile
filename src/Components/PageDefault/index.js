@@ -1,14 +1,17 @@
+/* eslint-disable react/jsx-indent */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Menu from '../Menu';
 import Footer from '../Footer';
 import { Main } from './styles';
 
-function PageDefault({ children }) {
+function PageDefault({ children, paddingAll }) {
   return (
     <>
       <Menu />
-      <Main>{children}</Main>
+        <Main paddingAll={paddingAll}>
+          {children}
+        </Main>
       <Footer />
     </>
   );

@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Main = styled.main`
   background-color: var(--black);
@@ -8,4 +8,7 @@ export const Main = styled.main`
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
+  ${({ paddingAll }) => css`
+    padding: ${paddingAll}
+  `}
 `;

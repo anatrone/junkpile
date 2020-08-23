@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   color: var(--white);
   border: 1px solid var(--white);
   background: var(--black);
@@ -22,4 +22,7 @@ const Button = styled.button`
   }
 `;
 
-export default Button;
+export const ButtonVideo = styled(Button)`
+  color: tomato;
+  border-color: tomato;
+`;
